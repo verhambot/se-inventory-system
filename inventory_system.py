@@ -1,6 +1,6 @@
 import ast
 import json
-import logging
+# BUGFIX 9: removed logging import
 from datetime import datetime
 
 # BUGFIX 3
@@ -11,7 +11,8 @@ def addItem(stock_data, item="default", qty=0):
     if not item:
         return
     stock_data[item] = stock_data.get(item, 0) + qty
-    logs.append("%s: Added %d of %s" % (str(datetime.now()), qty, item))
+    # BUGFIX 10
+    logs.append(f"{str(datetime.now())}: Added {qty} of {item}")
 
 
 def removeItem(stock_data, item, qty):
