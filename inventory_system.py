@@ -1,3 +1,4 @@
+import ast
 import json
 import logging
 from datetime import datetime
@@ -64,7 +65,9 @@ def main():
     saveData()
     loadData()
     printData()
-    eval("print('eval used')")  # dangerous
+
+    # BUGFIX 1
+    ast.literal_eval("print('eval used')")
 
 
 main()
