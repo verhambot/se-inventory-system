@@ -39,7 +39,7 @@ def load_data(file="inventory.json"):
 
 def save_data(stock_data, file="inventory.json"):
     # BUGFIX 7 & 8
-    with open(file, "r", encoding="utf-8") as f:
+    with open(file, "w", encoding="utf-8") as f:
         f.write(json.dumps(stock_data))
 
 
@@ -64,7 +64,7 @@ def main():
 
     add_item(stock_data, "apple", 10)
     add_item(stock_data, "banana", -2)
-    add_item(stock_data, 123, "ten")  # invalid types, no check
+    add_item(stock_data, 123, "ten")
     remove_item(stock_data, "apple", 3)
     remove_item(stock_data, "orange", 1)
     print("Apple stock:", get_qty(stock_data, "apple"))
