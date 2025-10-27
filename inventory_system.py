@@ -1,4 +1,3 @@
-import ast
 import json
 # BUGFIX 9: removed logging import
 from datetime import datetime
@@ -74,7 +73,7 @@ def main():
     print_data(stock_data)
 
     # BUGFIX 1
-    ast.literal_eval("print('eval used')")
+    print("eval is not used")
 
 
 main()
