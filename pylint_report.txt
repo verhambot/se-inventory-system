@@ -6,7 +6,6 @@ inventory_system.py:10:0: W0102: Dangerous default value [] as argument (dangero
 inventory_system.py:14:16: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
 inventory_system.py:17:0: C0116: Missing function or method docstring (missing-function-docstring)
 inventory_system.py:17:0: C0103: Function name "removeItem" doesn't conform to snake_case naming style (invalid-name)
-inventory_system.py:22:4: W0702: No exception type(s) specified (bare-except)
 inventory_system.py:26:0: C0116: Missing function or method docstring (missing-function-docstring)
 inventory_system.py:26:0: C0103: Function name "getQty" doesn't conform to snake_case naming style (invalid-name)
 inventory_system.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -26,5 +25,5 @@ inventory_system.py:57:0: C0116: Missing function or method docstring (missing-f
 inventory_system.py:3:0: W0611: Unused import logging (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.10/10 (previous run: 5.10/10, +0.00)
+Your code has been rated at 5.29/10 (previous run: 5.10/10, +0.20)
 

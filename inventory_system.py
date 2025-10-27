@@ -19,8 +19,9 @@ def removeItem(item, qty):
         stock_data[item] -= qty
         if stock_data[item] <= 0:
             del stock_data[item]
-    except:
-        pass
+    # BUGFIX 2
+    except KeyError:
+        print(f"Key {item} not found in stock_data.")
 
 
 def getQty(item):
