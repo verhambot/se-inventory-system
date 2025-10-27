@@ -6,8 +6,11 @@ from datetime import datetime
 # Global variable
 stock_data = {}
 
+# BUGFIX 3
+logs = []
 
-def addItem(item="default", qty=0, logs=[]):
+
+def addItem(item="default", qty=0):
     if not item:
         return
     stock_data[item] = stock_data.get(item, 0) + qty
