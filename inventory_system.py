@@ -8,7 +8,8 @@ logs = []
 
 
 def add_item(stock_data, item="default", qty=0):
-    if not item:
+    # BUGFIX 11
+    if (not item) or (not isinstance(item, str)) or (not isinstance(qty, (int, float))):
         return
     stock_data[item] = stock_data.get(item, 0) + qty
     # BUGFIX 10
